@@ -1,6 +1,6 @@
 #ios 10.3 新特性 更改appIcon
 
-在 info.plist 添加如下内容
+1.在 info.plist 添加如下内容
 
 	<dict>
 		<key>CFBundleAlternateIcons</key>
@@ -42,3 +42,19 @@
 		</dict>
     
 	</dict>
+	
+	2. 添加方法,这里是通过点击按钮来实现更换图标的
+	
+- (IBAction)changeIconClick:(UIButton *)sender {
+
+    if([UIApplication sharedApplication].supportsAlternateIcons){
+        
+        NSString *iconName=sender.titleLabel.text;
+        
+        [[UIApplication sharedApplication] setAlternateIconName:iconName completionHandler:^(NSError * _Nullable error){
+        
+        
+        }];
+        
+    }
+}

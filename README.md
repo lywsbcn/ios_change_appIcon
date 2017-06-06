@@ -45,9 +45,10 @@
 	
 	2. 添加方法,这里是通过点击按钮来实现更换图标的
 	
-- (IBAction)changeIconClick:(UIButton *)sender {
+	
 
     if([UIApplication sharedApplication].supportsAlternateIcons){
+    
         
         NSString *iconName=sender.titleLabel.text;
         
@@ -57,4 +58,5 @@
         }];
         
     }
-}
+    
+

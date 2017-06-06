@@ -15,6 +15,9 @@
 		187C134D1EE6545E009CB995 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187C134B1EE6545E009CB995 /* LaunchScreen.storyboard */; };
 		187C13581EE6545F009CB995 /* changeIconTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C13571EE6545F009CB995 /* changeIconTests.m */; };
 		187C13631EE6545F009CB995 /* changeIconUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C13621EE6545F009CB995 /* changeIconUITests.m */; };
+		187C13711EE655AA009CB995 /* icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 187C13701EE655AA009CB995 /* icon1.png */; };
+		187C13731EE655B8009CB995 /* icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 187C13721EE655B8009CB995 /* icon2.png */; };
+		187C13751EE655E9009CB995 /* icon3.png in Resources */ = {isa = PBXBuildFile; fileRef = 187C13741EE655E9009CB995 /* icon3.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		187C135E1EE6545F009CB995 /* changeIconUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = changeIconUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		187C13621EE6545F009CB995 /* changeIconUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = changeIconUITests.m; sourceTree = "<group>"; };
 		187C13641EE6545F009CB995 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187C13701EE655AA009CB995 /* icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon1.png; sourceTree = "<group>"; };
+		187C13721EE655B8009CB995 /* icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon2.png; sourceTree = "<group>"; };
+		187C13741EE655E9009CB995 /* icon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon3.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,9 @@
 		187C133D1EE6545E009CB995 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				187C13701EE655AA009CB995 /* icon1.png */,
+				187C13721EE655B8009CB995 /* icon2.png */,
+				187C13741EE655E9009CB995 /* icon3.png */,
 				187C133E1EE6545E009CB995 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -150,6 +159,7 @@
 				187C13361EE6545E009CB995 /* Sources */,
 				187C13371EE6545E009CB995 /* Frameworks */,
 				187C13381EE6545E009CB995 /* Resources */,
+				18EC588B1EE69E3200459201 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -249,9 +259,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				187C13751EE655E9009CB995 /* icon3.png in Resources */,
 				187C134D1EE6545E009CB995 /* LaunchScreen.storyboard in Resources */,
 				187C134A1EE6545E009CB995 /* Assets.xcassets in Resources */,
+				187C13731EE655B8009CB995 /* icon2.png in Resources */,
 				187C13481EE6545E009CB995 /* Main.storyboard in Resources */,
+				187C13711EE655AA009CB995 /* icon1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +283,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18EC588B1EE69E3200459201 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\"\nIFS=$'\\n'\necho $(find ${SRCROOT} -name \"icon2.png\")";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		187C13361EE6545E009CB995 /* Sources */ = {
@@ -516,6 +545,7 @@
 				187C13691EE6545F009CB995 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		187C136A1EE6545F009CB995 /* Build configuration list for PBXNativeTarget "changeIconTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +554,7 @@
 				187C136C1EE6545F009CB995 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		187C136D1EE6545F009CB995 /* Build configuration list for PBXNativeTarget "changeIconUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +563,7 @@
 				187C136F1EE6545F009CB995 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

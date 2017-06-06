@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)changeIconClick:(UIButton *)sender;
 
 @end
 

@@ -26,4 +26,16 @@
 }
 
 
+- (IBAction)changeIconClick:(UIButton *)sender {
+    if([UIApplication sharedApplication].supportsAlternateIcons){
+        
+        NSString *iconName=sender.titleLabel.text;
+        
+        [[UIApplication sharedApplication] setAlternateIconName:iconName completionHandler:^(NSError * _Nullable error){
+        
+        
+        }];
+        
+    }
+}
 @end
